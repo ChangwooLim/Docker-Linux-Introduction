@@ -1,0 +1,125 @@
+---
+title: "Docker-Linux-Introduction"
+author: Changwoo Lim
+date: 2022-08-02
+format: revealjs
+editor: visual
+---
+
+## 도커란?
+
+![](images/paste-E69ED8F8.png){fig-align="center" width="300"}
+
+-   Docker는 애플리케이션을 신속하게 구축, 테스트 및 배포할 수 있는 소프트웨어 플랫폼
+
+-   컨테이너 기반의 가상화 플랫폼
+
+-   컨테이너란?
+
+## Container
+
+![](images/paste-5C12D996.png)
+
+## 꼭 써야 하나요?
+
+-   그렇진 않습니다.
+
+## 왜 쓰나요?
+
+-   어느 환경이든 상관 없이 동일한 명령어를 사용했을 때 동일한 결과물을 기대할 수 있습니다.
+
+-   단순한 작업을 반복하지 않아도 됩니다.(apt-get install 등)
+
+-   프로그램을 간단히 설치하고, 또 삭제할 수 있습니다.
+
+-   격리된 환경에서 프로그램을 구동할 수 있습니다.
+
+## Linux Introduction
+
+-   ₩가 아닌, /로 디렉토리 구분
+
+-   소유권과 권한 개념이 있음.
+
+![사실 윈도우에도 있긴 합니다](images/image%20(6).png){fig-align="left" width="200"}
+
+## Linux 주요 명령어 - Ubuntu 기준
+
+-   apt-get: 패키지 관리 명령어; apt-get update, apt-get install \<패키지명\>; apt-get remove \<패키지명\>
+
+-   ls: list, 디렉토리 내용 확인 --a: 전체 파일 보기; -l: 자세한 내용 보기
+
+-   wget: 다운로드
+
+-   chmod: 권한 수정
+
+-   chown: 소유권 수정
+
+-   기타 명령어는 CheatSheet 참조
+
+## Docker 주요 구문
+
+-   docker pull \<이미지\>:\<태그\> (\<태그\>는 없으면 lastest)
+
+-   docker run \<플래그\> \<이미지\>:\<태그\>
+
+-   docker exec \<플래그\> \<컨테이너\>
+
+## Docker 주요 플래그
+
+-n. \--name: 컨테이너 이름 설정
+
+-v, ---volume: Volume Binding
+
+## Docker 주요 이미지
+
+## Docker Compose
+
+-   여러 개의 도커 이미지를 한 번에 관리할 수 있는 툴
+
+-   예시: [https://openstat.ai](https://openstat.ai){style="color: black;"} / [Github](https://github.com/zarathucorp/openstat)
+
+## Dockerfile
+
+-   Docker Image를 만들 수 있는 스크립트
+
+-   같은 Dockerfile로 Build한 Image는 항상 동일(단, 원본 Image의 태그가 lastest인 경우 제외)
+
+## 나만의 Dockerfile 만들기
+
+-   방법 1. 직접 컨테이너에 접속해서 만들기
+
+-   방법 2. Dockerfile로 빌드하기
+
+## Docker Network
+
+![](images/paste-A47C1A6B.png)
+
+## Docker Volume
+
+![](images/paste-6A01BF57.png)
+
+## Docker Volume
+
+![](images/paste-98486B42.png)
+
+## Docker Volume
+
+![](images/paste-9C501AE7.png)
+
+## Docker Volume
+
+-   Bind Mount란?
+
+-   Bind Mount와의 차이점
+
+    ![](images/paste-6EB51CD5.png){width="400"}
+
+## 실습: jinseob2kim/docker-rshiny 
+
+[Github](https://github.com/jinseob2kim/docker-rshiny)
+
+## 참고자료
+
+-   [#1](https://www.44bits.io/ko/post/why-should-i-use-docker-container)
+
+-   [#2](https://wooono.tistory.com/123)
