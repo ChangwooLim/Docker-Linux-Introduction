@@ -23,6 +23,10 @@ editor: visual
 ## 꼭 써야 하나요?
 
 -   그렇진 않습니다.
+-   쓰다 보면 편합니다
+    -   같은 작업을 반복 할 필요가 없고
+
+    -   처음 이미지를 만들었을때와 동일한 실행 환경을 보장합니다.
 
 ## 왜 쓰나요?
 
@@ -72,6 +76,14 @@ editor: visual
 
 ## Docker 주요 이미지
 
+-   [python](https://hub.docker.com/_/python)
+
+-   [node](https://hub.docker.com/_/node)
+
+-   [nginx](https://hub.docker.com/_/nginx)
+
+-   [mysql](https://hub.docker.com/_/mysql)
+
 ## Docker Compose
 
 -   여러 개의 도커 이미지를 한 번에 관리할 수 있는 툴
@@ -114,7 +126,7 @@ editor: visual
 
     ![](images/paste-6EB51CD5.png){width="400"}
 
-## 실습: jinseob2kim/docker-rshiny 
+## 실습: jinseob2kim/docker-rshiny
 
 [Github](https://github.com/jinseob2kim/docker-rshiny)
 
